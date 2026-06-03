@@ -47,14 +47,14 @@
       font-family: 'Outfit', sans-serif;
       font-size: 50px;
       font-weight: 700;
-      color: #000000;
+      color:#F5F5F5 ;
     }
 
     p {
       font-family: 'Outfit', sans-serif;
       font-size: 16px;
       font-weight: 400;
-      color: #2C2825;
+      color:#F5F5F5 ;
       line-height: 1.6;
     }
     .btn-cid {
