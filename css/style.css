@@ -18,7 +18,7 @@ body {
     background-color: var(--color-azul);
 }
 nav {
-    max-width: 1200px;
+   
     margin: 0 auto !important;
     padding: 3px !important;
 }
