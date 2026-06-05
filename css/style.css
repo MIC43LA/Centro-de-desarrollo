@@ -17,11 +17,18 @@ body {
 .navbar {
     background-color: var(--color-azul);
 }
+nav {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding: 3px !important;
+}
 
 .navbar-brand {
     color: white !important;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-nav .nav-link {
@@ -135,6 +142,12 @@ footer {
     color: white;
 }
 
-.navbar-toggler-icon {
-    display: none;
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:default {
+    border: none;
+    border-color:  transparent;
+    box-shadow: none;
 }
