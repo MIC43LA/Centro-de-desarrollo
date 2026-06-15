@@ -151,3 +151,15 @@ footer {
     border-color:  transparent;
     box-shadow: none;
 }
+
+.icono-contacto {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(70%);
+  margin-right: 8px;
+}
+ 
+.contacto-link {
+  text-decoration: none;
+  color: #F5F5F5;
+}
