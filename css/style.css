@@ -20,11 +20,11 @@ body.menu-open {
 }
 .navbar {
     background-color: #0056A4;
-}
-
-nav {
-    margin: 0 auto !important;
-    padding: 3px !important;
+    width: 100%;
+    padding: 3px 0;
+    display: flex;
+    flex: 0 0 auto;
+    
 }
 
 .navbar-brand {
@@ -150,15 +150,7 @@ footer {
         z-index: 1000;
     }
 }
-@media (min-width: 992px) {
-    .navbar-collapse {
-        position: static !important;
-        width: auto;
-        display: flex !important;
-        background: transparent;
-        padding: 0;
-    }
-}
+
 .navbar-actions {
     position: relative;
     z-index: 1050;
