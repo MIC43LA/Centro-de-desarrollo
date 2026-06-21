@@ -8,23 +8,27 @@
 }
 
 body {
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
     background-color: white;
+    
 }
 
-
+body.menu-open {
+    overflow: hidden;
+}
 .navbar {
-    background-color: var(--color-azul);
-}
-nav {
-   
-    margin: 0 auto !important;
-    padding: 3px !important;
+    background-color: #0056A4;
+    width: 100%;
+    padding: 3px 0;
+    display: flex;
+    flex: 0 0 auto;
+    
 }
 
 .navbar-brand {
-    color: white !important;
+    color:#0056A4!important;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     padding: 0;
@@ -35,40 +39,66 @@ nav {
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: white !important;
+    color:#F5F5F5  !important;
 }
 
 .navbar-nav .nav-link:hover {
     color: #d9e8f7 !important;
 }
 
-h1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #F5F5F5;
+.navbar-nav {
+    align-items: center;
 }
 
-p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #F5F5F5;
-    line-height: 1.6;
+.navbar-collapse {
+    align-items: center;
+     width: 100%;
 }
 
-.btn-cid {
-    font-family: 'Hanuman', serif;
+.btn-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: #fff;
+    color: var(--color-azul);
+
+    font-family: 'Outfit', sans-serif;
     font-size: 14px;
-    padding: 10px 24px;
-    background-color: var(--color-azul);
-    color: white;
-    border: none;
-    border-radius: 6px;
+    font-weight: 700;
+
+    padding: 8px 18px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.btn-cid:hover {
-    background-color: #004785;
+.btn-comprar:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-comprar img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
 
 footer {
@@ -91,75 +121,56 @@ footer {
     color: white;
 }
 
-.btn-buscar {
-    background-color: white;
-    color: #0056A4;
-    border: 2px solid white;
-    font-weight: bold;
-}
-
-.btn-buscar:hover {
-    background-color: #f5f5f5;
-    color: #0056A4;
-}
-
-.form-control-sm {
-    border-radius: 20px;
-}
-
-.btn-light {
-    border-radius: 20px;
-    color: #0056A4;
-    font-weight: bold;
-}
-
-.buscador-cid {
-    height: 35px;
-    font-size: 12px;
-    border-radius: 20px;
-}
-
-.btn-buscar-cid {
-    height: 28px;
-    padding: 0 15px;
-    font-size: 14px;
-    border-radius: 20px;
-}
-
-.dropdown-menu {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.dropdown-item {
-    font-family: 'Outfit', sans-serif;
-    font-size: 14px;
-}
-
-.dropdown-item:hover {
-    background-color: #0056A4;
-    color: white;
-}
-
-.navbar-toggler,
-.navbar-toggler:active,
-.navbar-toggler:focus,
-.navbar-toggler:hover,
-.navbar-toggler:default {
-    border: none;
-    border-color:  transparent;
-    box-shadow: none;
-}
-
 .icono-contacto {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) saturate(100%) invert(70%);
-  margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(70%);
+    margin-right: 8px;
 }
- 
+
 .contacto-link {
-  text-decoration: none;
-  color: #F5F5F5;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+         width: 100%;
+        display: block;
+
+        background-color: #0056A4;
+        padding: 15px 0;
+
+        z-index: 1000;
+    }
+}
+
+.navbar-actions {
+    position: relative;
+    z-index: 1050;
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar {
+    position: relative;
+    z-index: 1050;
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1100;
+}
+.navbar-collapse {
+    z-index: 1000;
+}
+.navbar .container-fluid {
+    align-items: center;
+     flex-wrap: nowrap;
 }
