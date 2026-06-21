@@ -133,6 +133,11 @@ footer {
     color: #F5F5F5;
 }
 
+.logo-vivero {
+  width: 150px;
+  height: auto;
+}
+
 @media (max-width: 991.98px) {
 
     .navbar-collapse {
