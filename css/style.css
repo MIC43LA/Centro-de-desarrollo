@@ -138,24 +138,6 @@ footer {
   height: auto;
 }
 
-@media (max-width: 991.98px) {
-
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-
-         width: 100%;
-        display: block;
-
-        background-color: #0056A4;
-        padding: 15px 0;
-
-        z-index: 1000;
-    }
-}
-
 .navbar-actions {
     position: relative;
     z-index: 1050;
@@ -200,87 +182,89 @@ footer {
     margin-top: 200px;
     margin-bottom: 300px;
     background-color: #f2f2f2;
-    padding-left: 15px;
-    padding-bottom: 25px;
-    padding-right: 15px;
+    padding: 0 15px 25px;
 }
 
-.titulo_seccion_quienes_somos{
+.titulo_seccion_quienes_somos {
     font-size: 50px;
-    margin-bottom: 35px;
-    margin: 15px;
-    margin-top: 70px;
     font-weight: 700;
+    margin: 70px 15px 35px;
 }
-
 
 .semilla {
-    margin-left: 60px;
-    margin-bottom: 150px;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto 150px;
+    display: block;
 }
 
 .contenedor_qs1 {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
 }
 
 .texto_izquierda {
     width: 80px;
     line-height: 1;
     margin: 0;
-    font-weight: 400px;
-    margin-right: 25px;
+    font-weight: 400;
 }
 
 .texto_derecha {
     width: 80px;
     line-height: 1;
     margin: 0;
-    font-weight: 400px;
-    margin-left: 25px;
+    font-weight: 400;
 }
 
 .texto_intermedio_qs {
     font-weight: 700;
     font-size: 35px;
-    margin-left: 90px;
-    margin-right: 0px;
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
+    max-width: 1000px;
 }
 
-/*CARRUSEL - GALERIA - SECCION 1*/
+/*CARRUSEL - GALERIA - SECCION 1 */
+
 .galeria_qs {
     display: flex;
     gap: 15px;
     overflow-x: auto;
+    margin-bottom: 25px;
+    scroll-behavior: smooth;
 }
 
 .galeria_qs img {
-    width: 350px;
-    height: 340px;
+    width: min(350px, 80vw);
+    height: auto;
+    aspect-ratio: 350 / 340;
     object-fit: cover;
     flex-shrink: 0;
     margin-bottom: 100px;
     border-radius: 20px;
 }
 
-.galeria_qs {
-    margin-bottom: 25px;
-}
-
 .detalle_qs {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 100px;
-    margin-right: 300px;
+    max-width: 1000px;
 }
 
 .img_miembros {
-    margin-bottom: 100px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
+    margin-bottom: 100px;
+    display: block;
 }
 
-/*BOTON SECCION 1*/
+/*BOTON SECCION 1 */
+
 .boton_contactanos_qs {
     display: inline-block;
     background-color: #0056A4;
@@ -298,4 +282,90 @@ footer {
 
 .boton_contactanos_ig_qs {
     filter: brightness(0) invert(90%);
+}
+
+/*RESPONSIVE */
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+         width: 100%;
+        display: block;
+
+        background-color: #0056A4;
+        padding: 15px 0;
+
+        z-index: 1000;
+    }
+
+    .quienes_somos {
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+
+    .titulo_seccion_quienes_somos {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contenedor_qs1 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .texto_izquierda,
+    .texto_derecha {
+        font-size: 22px;
+    }
+
+    .texto_izquierda {
+        align-self: flex-start;
+        width: auto;
+    }
+
+    .texto_derecha {
+        padding-right: 53px;
+        margin-bottom: 55px;
+        align-self: flex-end;
+        margin-right: 53px;
+    }
+
+    .semilla {
+        max-width: 90%;
+        margin-bottom: 8px;
+    }
+
+    .texto_intermedio_qs {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 10px 60px;
+    }
+
+    .galeria_qs img {
+        width: 80vw;
+        max-width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .detalle_qs {
+        font-size: 20px;
+        margin: 0 10px 60px;
+        text-align: justify;
+    }
+
+    .img_miembros {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .boton_contactanos_qs {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 30px;
+    }
 }
