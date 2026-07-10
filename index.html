@@ -14,7 +14,6 @@
 
 <body>
   <header>
-    <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid justify-content-between">
           <div class="align-items-center gap-3 navbar-actions order-first ">
@@ -47,10 +46,10 @@
           </div>
         </div>
       </nav>
-    </header>
   </header>
 
-  <main class="container my-5 py-5">
+
+  <main>
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
 
@@ -65,7 +64,7 @@
         <div class="carousel-item active">
           <img src="Img/iconos/inicio_carrusel2.jpeg"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Clases de natación e integración. </h5>
             <p>Súmate a las diversas actividades que ofrecemos.</p>
           </div>
@@ -76,18 +75,18 @@
             src="Img/iconos/inicio_carrusel.jpeg"
             class="d-block w-100" alt="...">
 
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Nuestro propio Vivero Urbano. </h5>
             <p>Espacios pensados para la colaboración y participación de la comunidad. </p>
           </div>
         </div>
         <div class="carousel-item">
 
-          <img src="Img/iconos/img_carrusel13.jpeg"
+          <img src="Img/iconos/imagenes cid/vida-independiente.png"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Un lugar para todos. </h5>
-            <p>Más que una institución, somos una red de apoyo donde cada paso lo damos juntos..</p>
+          <div class="carousel-caption">
+            <h5>Nuestro taller de vida independiente . </h5>
+            <p>Realizamos actividades para fomentar la autonomía y el bienestar de las personas con discapacidad. </p>
           </div>
         </div>
       </div>
@@ -103,8 +102,8 @@
       </button>
     </div>
 
-
-    <section class="quienes_somos">
+    <div class="container my-5 py-5">
+      <section class="quienes_somos" id="quienes_somos">
       <h2 class="titulo_seccion_quienes_somos"> ¿QUIÉNES SOMOS? </h2>
 
       <!--Entrada principal-->
@@ -112,7 +111,7 @@
         <div class="texto_izquierda">
           NUESTRA<br>HISTORIA
         </div>
-        <img class="semilla" src="Img/iconos/img_semillas.jpeg" alt="imagen de semilla">
+        <img class="semilla" src="Img/iconos/imagenes cid/salidas-3.jpeg" alt="imagen de una salida de CID">
         <div class="texto_derecha">
           CENTRO INTEGRAL DE DESARROLLO<br>CID
         </div>
@@ -121,18 +120,18 @@
       <p class="texto_intermedio_qs">Somos un grupo de profesionales con la misión de desarrollar diferentes áreas de crecimiento. </p>
       
       <div class="galeria_qs">
-        <img src="Img/iconos/img_carrusel7.jpeg">
+        <img src="Img/iconos/imagenes cid/vivero-3.jpeg">
         <img src="Img/iconos/img_carrusel8.jpeg">
-        <img src="Img/iconos/img_carrusel3.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas-2.jpeg">
+        <img src="Img/iconos/imagenes cid/festival-2.jpeg">
         <img src="Img/iconos/img_carrusel12.jpeg">
-        <img src="Img/iconos/img_carrusel5.jpeg">
-        <img src="Img/iconos/img_carrusel6.jpeg">
+        <img src="Img/iconos/imagenes cid/vivero-5.jpeg">
         <img src="Img/iconos/img_carrusel1.jpeg">
         <img src="Img/iconos/img_carrusel13.jpeg">
-        <img src="Img/iconos/img_carrusel2.jpeg">
+        <img src="Img/iconos/imagenes cid/vida-independiente-2.jpeg">
         <img src="Img/iconos/img_carrusel9.jpeg">
-        <img src="Img/iconos/img_carrusel10.jpeg">
-        <img src="Img/iconos/img_carrusel11.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas-2.jpeg">
         <img src="Img/iconos/img_carrusel4.jpeg">
       </div>
 
@@ -184,6 +183,7 @@
       <section>
         <p>proyectos - tomas</p>
       </section>
+    </div>
     </div>
 
   </main>
@@ -251,6 +251,20 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function classify(img) {
+        if (!img.naturalWidth || !img.naturalHeight) return;
+        if (img.naturalHeight > img.naturalWidth) img.classList.add('portrait');
+        else img.classList.add('landscape');
+      }
+
+      document.querySelectorAll('#carouselExampleCaptions .carousel-item img').forEach(function (img) {
+        if (img.complete) classify(img);
+        else img.addEventListener('load', function () { classify(img); });
+      });
+    });
+  </script>
 </body>
 
 </html>
