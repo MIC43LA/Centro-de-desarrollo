@@ -24,7 +24,25 @@ body.menu-open {
     padding: 3px 0;
     display: flex;
     flex: 0 0 auto;
-    
+    position: relative;
+    z-index: 1050;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
 }
 
 .navbar-brand {
@@ -35,24 +53,41 @@ body.menu-open {
     margin: 0;
 }
 
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 .navbar-nav .nav-link {
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color:#F5F5F5  !important;
+    padding: 0.5rem 0.75rem;
 }
 
 .navbar-nav .nav-link:hover {
     color: #d9e8f7 !important;
 }
 
-.navbar-nav {
+.navbar-right-section {
+    display: flex;
     align-items: center;
-}
-
-.navbar-collapse {
-    align-items: center;
-     width: 100%;
+    gap: 8px;
+    order: 3;
+    flex-shrink: 0;
 }
 
 .btn-comprar {
@@ -60,20 +95,17 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     background-color: #fff;
     color: var(--color-azul);
-
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 700;
-
     padding: 8px 18px;
     border: 2px solid #fff;
     border-radius: 50px;
-
     text-decoration: none;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .btn-comprar:hover {
@@ -91,6 +123,9 @@ body.menu-open {
 .navbar-toggler {
     border: none;
     box-shadow: none;
+    position: relative;
+    z-index: 1100;
+    display: none;
 }
 
 .navbar-toggler:focus,
@@ -148,48 +183,6 @@ footer {
 
 
 
-@media (max-width: 991.98px) {
-
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-
-        width: 100%;
-        display: block;
-
-        background-color: #0056A4;
-        padding: 15px 0;
-
-        z-index: 1000;
-    }
-}
-
-.navbar-actions {
-    position: relative;
-    z-index: 1050;
-}
-.navbar-nav {
-    align-items: center;
-}
-.navbar {
-    position: relative;
-    z-index: 1050;
-}
-
-.navbar-toggler {
-    position: relative;
-    z-index: 1100;
-}
-.navbar-collapse {
-    z-index: 1000;
-}
-.navbar .container-fluid {
-    align-items: center;
-     flex-wrap: nowrap;
-}
-
 /*LETRAS DE CARRUSEL INICIO*/
 
 #carouselExampleCaptions .carousel-caption h5 {
@@ -198,99 +191,107 @@ footer {
     font-weight: lighter;
     -webkit-text-stroke: 2px #deedf0; 
 }
-
-#carouselExampleCaptions .carousel-caption p {
-    color: #ffffff; 
-    font-size: 1.5rem;
-    -webkit-text-stroke: 1px #ffffff; 
-}
+    
+    #carouselExampleCaptions {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
 
 /*SECCION QUIENES SOMOS - SECCION 1*/
 .quienes_somos {
     margin-top: 200px;
     margin-bottom: 300px;
     background-color: #f2f2f2;
-    padding-left: 15px;
-    padding-bottom: 25px;
-    padding-right: 15px;
+    padding: 0 15px 25px;
 }
 
-.titulo_seccion_quienes_somos{
+.titulo_seccion_quienes_somos {
     font-size: 50px;
-    margin-bottom: 35px;
-    margin: 15px;
-    margin-top: 70px;
     font-weight: 700;
+    margin: 70px 15px 35px;
 }
 
+/* Centrar el título de la sección Quiénes somos */
+.titulo_seccion_quienes_somos {
+    text-align: center;
+}
 
 .semilla {
-    margin-left: 60px;
-    margin-bottom: 150px;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto 150px;
+    display: block;
 }
 
 .contenedor_qs1 {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
 }
 
 .texto_izquierda {
     width: 80px;
     line-height: 1;
     margin: 0;
-    font-weight: 400px;
-    margin-right: 25px;
+    font-weight: 400;
 }
 
 .texto_derecha {
     width: 80px;
     line-height: 1;
     margin: 0;
-    font-weight: 400px;
-    margin-left: 25px;
+    font-weight: 400;
 }
 
 .texto_intermedio_qs {
     font-weight: 700;
     font-size: 35px;
-    margin-left: 90px;
-    margin-right: 0px;
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
+    max-width: 1000px;
 }
 
-/*CARRUSEL - GALERIA - SECCION 1*/
 .galeria_qs {
     display: flex;
     gap: 15px;
     overflow-x: auto;
+    margin-bottom: 25px;
+    scroll-behavior: smooth;
 }
 
 .galeria_qs img {
-    width: 350px;
-    height: 340px;
+    width: min(350px, 80vw);
+    height: auto;
+    aspect-ratio: 350 / 340;
     object-fit: cover;
     flex-shrink: 0;
     margin-bottom: 100px;
     border-radius: 20px;
 }
 
-.galeria_qs {
-    margin-bottom: 25px;
-}
-
 .detalle_qs {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 100px;
-    margin-right: 300px;
+    max-width: 1000px;
 }
 
 .img_miembros {
-    margin-bottom: 100px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
+    margin-bottom: 100px;
+    display: block;
 }
 
-/*BOTON SECCION 1*/
+/*BOTON SECCION 1 */
+
 .boton_contactanos_qs {
     display: inline-block;
     background-color: #0056A4;
@@ -308,4 +309,398 @@ footer {
 
 .boton_contactanos_ig_qs {
     filter: brightness(0) invert(90%);
+}
+
+/*RESPONSIVE */
+@media (max-width: 991.98px) {
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar .container-fluid {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-actions {
+        order: 1;
+    }
+
+    .navbar-toggler {
+        order: 2;
+    }
+
+    .navbar-right-section {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        position: absolute !important;
+        top: 100%;
+        left: 0;
+        width: 100% !important;
+        justify-content: flex-start;
+        background-color: #0056A4 !important;
+        padding: 0 !important;
+        z-index: 1000 !important;
+        flex-direction: column;
+        order: 4;
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: flex !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-right-section {
+        width: 100%;
+        justify-content: center;
+        margin: 0.75rem 0;
+    }
+
+    .btn-comprar {
+        width: auto;
+    }
+
+    .quienes_somos {
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+
+    .titulo_seccion_quienes_somos {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contenedor_qs1 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .texto_izquierda,
+    .texto_derecha {
+        font-size: 22px;
+    }
+
+    .texto_izquierda {
+        align-self: flex-start;
+        width: auto;
+    }
+
+    .texto_derecha {
+        padding-right: 53px;
+        margin-bottom: 55px;
+        align-self: flex-end;
+        margin-right: 53px;
+    }
+
+    .semilla {
+        max-width: 90%;
+        margin-bottom: 8px;
+    }
+
+    .texto_intermedio_qs {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 10px 60px;
+    }
+
+    .galeria_qs img {
+        width: 80vw;
+        max-width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .detalle_qs {
+        font-size: 20px;
+        margin: 0 10px 60px;
+        text-align: justify;
+    }
+
+    .img_miembros {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .boton_contactanos_qs {
+        display: block;
+        width: fit-content;
+
+        margin: 0 auto 30px;
+    }
+
+}
+
+.carousel-item {
+    --carousel-height-desktop: 60vh;
+    --carousel-height-tablet: 50vh;
+    --carousel-height-mobile: 40vh;
+
+    height: var(--carousel-height-desktop);
+        max-height: 700px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+        .carousel-item {
+            height: var(--carousel-height-tablet);
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .carousel-item {
+            height: var(--carousel-height-mobile);
+        }
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+    }
+
+/* Reduce gap under full-width carousel */
+#carouselExampleCaptions + .container {
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+}
+
+/* Desktop: make caption narrower and left-aligned */
+@media (min-width: 992px) {
+    #carouselExampleCaptions .carousel-caption {
+        left: 2rem;
+        right: auto;
+        bottom: 2.5rem;
+        max-width: 45%;
+    }
+}
+
+/* Indicators and controls adjustments */
+.carousel-indicators {
+    bottom: 1rem;
+    z-index: 5;
+}
+.carousel-caption {
+    z-index: 6;
+}
+
+    /* Estilo clásico de captions */
+    #carouselExampleCaptions .carousel-caption {
+        position: absolute;
+        left: 2rem;
+        right: auto;
+        bottom: 2rem;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.55);
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        max-width: 75%;
+    }
+
+    #carouselExampleCaptions .carousel-caption h5 {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 0.25rem 0;
+        -webkit-text-stroke: 0;
+    }
+
+    #carouselExampleCaptions .carousel-caption p {
+        color: #f1f1f1;
+        font-size: 0.95rem;
+        margin: 0;
+        -webkit-text-stroke: 0;
+    }
+
+    /* Captions responsivos para móvil */
+    @media (max-width: 575.98px) {
+        #carouselExampleCaptions .carousel-caption {
+            left: 1rem;
+            right: 1rem;
+            bottom: 1rem;
+            max-width: none;
+            padding: 0.5rem 0.75rem;
+        }
+
+        #carouselExampleCaptions .carousel-caption h5 {
+            font-size: 0.9rem;
+            margin: 0 0 0.15rem 0;
+        }
+
+        #carouselExampleCaptions .carousel-caption p {
+            font-size: 0.75rem;
+            margin: 0;
+        }
+    }
+
+    /* Indicadores clásicos redondeados */
+    .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.6);
+        border: none;
+    }
+    .carousel-indicators .active {
+        background-color: #ffffff;
+    }
+
+    /* Controles más visibles */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+        width: 44px;
+        height: 44px;
+        background-size: 44px 44px;
+    }
+
+    /* Imagenes verticales (portrait): evitamos recorte y las centramos */
+    .carousel-item img.portrait {
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center center;
+        background-color: #f7f7f7;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Asegurar que las imagenes landscape sigan llenando */
+    .carousel-item img.landscape {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+    }
+
+/* SECCION ACTIVIDADES*/
+
+.titulo-proyectos {
+    margin-top: 85px;
+    margin-bottom: 55px;
+}
+
+.wrapper-actividades{
+    display:flex;
+    gap:40px;
+}
+
+.columna-talleres{
+    width:120px;
+    flex-shrink:0;
+    padding-top:60px;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-right: 25px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.contenido-actividades{
+    flex:1;
+    margin-right: 0%;
+}
+
+.activity-card{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    border-top: 1px solid #b8b8b8;
+    padding: 35px 0;
+
+    width: 100%;
+}
+
+.activities-list{
+    width: 100%;
+}
+
+.contenido-actividades{
+    width: 100%;
+}
+
+.activity-content{
+    width:55%;
+}
+
+.activity-image {
+    width: 40%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.info-proyectos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.titulo-unite{
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkgrey;
+}
+
+.info-proyectos{
+    margin: 0 0 30px 0;
+    max-width: 700px;
+}
+
+.boton-quienes{
+    display: inline-block;
+    background-color: #0056A4;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.info-proyectos2 {
+    font-weight: bold;
 }

@@ -13,8 +13,7 @@
 </head>
 
 <body>
-  <header>
-    <header>
+  <header class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid justify-content-between">
           <div class="align-items-center gap-3 navbar-actions order-first ">
@@ -24,11 +23,11 @@
           </div>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav text-center gap-3">
-              <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#carouselExampleCaptions">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#quienes_somos">Nosotros</a></li>
               <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
           </div>
           <div class="row ">
@@ -47,10 +46,10 @@
           </div>
         </div>
       </nav>
-    </header>
   </header>
 
-  <main class="container my-5 py-5">
+
+  <main>
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
 
@@ -65,7 +64,7 @@
         <div class="carousel-item active">
           <img src="Img/iconos/inicio_carrusel2.jpeg"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Clases de natación e integración. </h5>
             <p>Súmate a las diversas actividades que ofrecemos.</p>
           </div>
@@ -76,18 +75,18 @@
             src="Img/iconos/inicio_carrusel.jpeg"
             class="d-block w-100" alt="...">
 
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Nuestro propio Vivero Urbano. </h5>
             <p>Espacios pensados para la colaboración y participación de la comunidad. </p>
           </div>
         </div>
         <div class="carousel-item">
 
-          <img src="Img/iconos/img_carrusel13.jpeg"
+          <img src="Img/iconos/imagenes cid/vida-independiente.png"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Un lugar para todos. </h5>
-            <p>Más que una institución, somos una red de apoyo donde cada paso lo damos juntos..</p>
+          <div class="carousel-caption">
+            <h5>Nuestro taller de vida independiente . </h5>
+            <p>Realizamos actividades para fomentar la autonomía y el bienestar de las personas con discapacidad. </p>
           </div>
         </div>
       </div>
@@ -103,8 +102,8 @@
       </button>
     </div>
 
-
-    <section class="quienes_somos">
+    <div class="container my-5 py-5">
+      <section class="quienes_somos" id="quienes_somos">
       <h2 class="titulo_seccion_quienes_somos"> ¿QUIÉNES SOMOS? </h2>
 
       <!--Entrada principal-->
@@ -112,7 +111,7 @@
         <div class="texto_izquierda">
           NUESTRA<br>HISTORIA
         </div>
-        <img class="semilla" src="Img/iconos/img_semillas.jpeg" alt="imagen de semilla">
+        <img class="semilla" src="Img/iconos/imagenes cid/salidas-3.jpeg" alt="imagen de una salida de CID">
         <div class="texto_derecha">
           CENTRO INTEGRAL DE DESARROLLO<br>CID
         </div>
@@ -121,18 +120,18 @@
       <p class="texto_intermedio_qs">Somos un grupo de profesionales con la misión de desarrollar diferentes áreas de crecimiento. </p>
       
       <div class="galeria_qs">
-        <img src="Img/iconos/img_carrusel7.jpeg">
+        <img src="Img/iconos/imagenes cid/vivero-3.jpeg">
         <img src="Img/iconos/img_carrusel8.jpeg">
-        <img src="Img/iconos/img_carrusel3.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas-2.jpeg">
+        <img src="Img/iconos/imagenes cid/festival-2.jpeg">
         <img src="Img/iconos/img_carrusel12.jpeg">
-        <img src="Img/iconos/img_carrusel5.jpeg">
-        <img src="Img/iconos/img_carrusel6.jpeg">
+        <img src="Img/iconos/imagenes cid/vivero-5.jpeg">
         <img src="Img/iconos/img_carrusel1.jpeg">
         <img src="Img/iconos/img_carrusel13.jpeg">
-        <img src="Img/iconos/img_carrusel2.jpeg">
+        <img src="Img/iconos/imagenes cid/vida-independiente-2.jpeg">
         <img src="Img/iconos/img_carrusel9.jpeg">
-        <img src="Img/iconos/img_carrusel10.jpeg">
-        <img src="Img/iconos/img_carrusel11.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas.jpeg">
+        <img src="Img/iconos/imagenes cid/salidas-2.jpeg">
         <img src="Img/iconos/img_carrusel4.jpeg">
       </div>
 
@@ -180,11 +179,85 @@
         </div> 
         </div>
       </section>
+<section class="modulo-actividades" id="proyectos">
+    <header class="section-title">
+        <h1 class="titulo-proyectos">PROYECTOS & ACTIVIDADES</h1>
+    </header>
 
-      <section>
-        <p>proyectos - tomas</p>
-      </section>
+    <div class="wrapper-actividades">
+
+        <div class="columna-talleres">
+            <span>TALLERES</span>
+        </div>
+
+        <section class="activities-list">
+
+            <div class="contenido-actividades">
+
+                <article class="activity-card">
+                    <div class="activity-content">
+                        <h3 class="activity-title">SALIDAS SOCIOCULTURALES</h3>
+                    </div>
+                    <figure class="activity-image">
+                        <img src="Img/salidassociocuturales.jpg.jpeg" alt="Integrantes participando en salidas socioculturales">
+                    </figure>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-content">
+                        <h3 class="activity-title">TALLER VIDA INDEPENDIENTE</h3>
+                    </div>
+                    <figure class="activity-image">
+                        <img src="Img/vida.jpg.jpeg" alt="Espacio del taller de vida independiente">
+                    </figure>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-content">
+                        <h3 class="activity-title">VIVERO URBANO</h3>
+                    </div>
+                    <figure class="activity-image">
+                        <img src="Img/vivero.jpg.jpeg" alt="Plantas y flores en el vivero urbano">
+                    </figure>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-content">
+                        <h3 class="activity-title">BANDA MÁGICA</h3>
+                    </div>
+                    <figure class="activity-image">
+                        <img src="Img/bandamagica.jpg.jpeg" alt="Instrumentos musicales de la banda mágica">
+                    </figure>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-content">
+                        <h3 class="activity-title">TALLER LABORAL</h3>
+                    </div>
+                    <figure class="activity-image">
+                        <img src="Img/laboral.jpg.jpeg" alt="Participantes trabajando en el taller laboral">
+                    </figure>
+                </article>
+
+            </div>
+            <div class="info-proyectos">
+              <p class="titulo-unite">UNITE</p>
+
+              <h2 class="info-proyectos2">
+                  Mira nuestras Redes<br> 
+                  Sociales y enterate de <br>
+                  nuestros horarios.
+              </h2>
+
+              <a href="#quienes_somos" class="boton-quienes">
+                QUIÉNES SOMOS
+              </a>
+            </div>
+        </section>
+
     </div>
+</section>
+
 
   </main>
 
@@ -202,8 +275,8 @@
         <div class="col-md-4">
           <h5 class="mb-3">Enlaces</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="contacto-link">Inicio</a></li>
-            <li><a href="#" class="contacto-link">Nosotros</a></li>
+            <li><a href="#carouselExampleCaptions" class="contacto-link">Inicio</a></li>
+            <li><a href="#quienes_somos " class="contacto-link">Nosotros</a></li>
             <li><a href="#servicios" class="contacto-link">Servicios</a></li>
             <li><a href="#" class="contacto-link">Proyectos</a></li>
           </ul>
@@ -251,6 +324,20 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function classify(img) {
+        if (!img.naturalWidth || !img.naturalHeight) return;
+        if (img.naturalHeight > img.naturalWidth) img.classList.add('portrait');
+        else img.classList.add('landscape');
+      }
+
+      document.querySelectorAll('#carouselExampleCaptions .carousel-item img').forEach(function (img) {
+        if (img.complete) classify(img);
+        else img.addEventListener('load', function () { classify(img); });
+      });
+    });
+  </script>
 </body>
 
 </html>
