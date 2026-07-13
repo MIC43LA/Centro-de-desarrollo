@@ -136,6 +136,19 @@ body.menu-open {
     outline: none;
 }
 
+/*VIVERO/ SERVICIOS*/
+
+.servicios {
+    font-family: 'Outfit', sans-serif; 
+    color: var(--color-texto);
+    font-size: 16px;
+}
+
+.logo-vivero {
+  width: 150px;
+  height: auto;
+}
+
 footer {
     background-color: var(--color-azul);
 }
@@ -168,10 +181,7 @@ footer {
     color: #F5F5F5;
 }
 
-.logo-vivero {
-  width: 150px;
-  height: auto;
-}
+
 
 /*LETRAS DE CARRUSEL INICIO*/
 
