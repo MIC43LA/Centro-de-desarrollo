@@ -19,6 +19,10 @@ body {
     color: var(--color-texto);
 }
 
+#carouselExampleCaptions {
+    margin-top: 90px;
+}
+
 body.menu-open {
     overflow: hidden;
 }
@@ -229,11 +233,6 @@ body.menu-open {
 }
 
 .carousel-item {
-    --carousel-height-desktop: 60vh;
-    --carousel-height-tablet: 50vh;
-    --carousel-height-mobile: 40vh;
-    height: var(--carousel-height-desktop);
-    max-height: 700px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -241,26 +240,16 @@ body.menu-open {
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center center;
     display: block;
 }
 
-.carousel-item img.portrait {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center center;
-    background-color: #f7f7f7;
-    display: block;
-    margin: 0 auto;
-}
-
+.carousel-item img.portrait,
 .carousel-item img.landscape {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center center;
     display: block;
