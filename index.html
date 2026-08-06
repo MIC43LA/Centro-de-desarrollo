@@ -219,59 +219,65 @@
 
             <div class="contenido-actividades">
 
-                <article class="activity-card">
-                    <div class="activity-content">
-                        <h3 class="activity-title">SALIDAS SOCIOCULTURALES</h3>
-                    </div>
-                    <figure class="activity-image">
-                        <img src="Img/salidassociocuturales.jpg.jpeg" alt="Integrantes participando en salidas socioculturales">
-                    </figure>
-                </article>
+                <!-- SALIDAS SOCIOCULTURALES -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-salidas">
+    <div class="activity-content">
+        <h3 class="activity-title">SALIDAS SOCIOCULTURALES</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/salidas.jpg" alt="Salidas socioculturales">
+    </figure>
+</article>
 
-                <article class="activity-card">
-                    <div class="activity-content">
-                        <h3 class="activity-title">TALLER VIDA INDEPENDIENTE</h3>
-                    </div>
-                    <figure class="activity-image">
-                        <img src="Img/vida.jpg.jpeg" alt="Espacio del taller de vida independiente">
-                    </figure>
-                </article>
+<!-- TALLER VIDA INDEPENDIENTE -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-vida">
+    <div class="activity-content">
+        <h3 class="activity-title">TALLER VIDA INDEPENDIENTE</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/vida.jpg.jpeg" alt="Espacio del taller de vida independiente">
+    </figure>
+</article>
 
-              <article class="activity-card">
-                <div class="activity-content">
-                  <h3 class="activity-title">STREAMINGS</h3>
-                </div>
-                <figure class="activity-image">
-                  <img src="Img/streamings.jpg.jpeg" alt="Transmisiones en vivo">
-                </figure>
-              </article>
+<!-- STREAMINGS -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-streamings">
+    <div class="activity-content">
+        <h3 class="activity-title">STREAMINGS</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/streamings.jpg" alt="Transmisiones en vivo">
+    </figure>
+</article>
 
-                <article class="activity-card">
-                    <div class="activity-content">
-                        <h3 class="activity-title">VIVERO URBANO</h3>
-                    </div>
-                    <figure class="activity-image">
-                        <img src="Img/vivero.jpg.jpeg" alt="Plantas y flores en el vivero urbano">
-                    </figure>
-                </article>
+<!-- VIVERO URBANO -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-vivero">
+    <div class="activity-content">
+        <h3 class="activity-title">VIVERO URBANO</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/vivero.jpg.jpeg" alt="Plantas y flores en el vivero urbano">
+    </figure>
+</article>
 
-                <article class="activity-card">
-                    <div class="activity-content">
-                        <h3 class="activity-title">MUSICOTERAPIA</h3>
-                    </div>
-                    <figure class="activity-image">
-                        <img src="Img/bandamagica.jpg.jpeg" alt="Instrumentos musicales de la banda mágica">
-                    </figure>
-                </article>
+<!-- MUSICOTERAPIA -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-musicoterapia">
+    <div class="activity-content">
+        <h3 class="activity-title">MUSICOTERAPIA</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/musicoterapia.jpg" alt="Taller de Musicoterapia">
+    </figure>
+</article>
 
-                <article class="activity-card">
-                    <div class="activity-content">
-                        <h3 class="activity-title">TALLER LABORAL</h3>
-                    </div>
-                    <figure class="activity-image">
-                        <img src="Img/laboral.jpg.jpeg" alt="Participantes trabajando en el taller laboral">
-                    </figure>
-                </article>
+<!-- TALLER LABORAL -->
+<article class="activity-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-laboral">
+    <div class="activity-content">
+        <h3 class="activity-title">TALLER LABORAL</h3>
+    </div>
+    <figure class="activity-image">
+        <img src="Img/laboral.jpg" alt="Taller laboral">
+    </figure>
+</article>
 
             </div>
             <div class="info-proyectos">
@@ -372,6 +378,93 @@
       });
     });
   </script>
+
+<!-- Modales de información de Proyectos -->
+
+<div class="modal fade" id="modal-salidas" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">SALIDAS SOCIOCULTURALES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Espacios de integración y participación comunitaria orientados a fortalecer el desarrollo social, la autonomía y el disfrute recreativo fuera del entorno habitual[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-vida" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">TALLER VIDA INDEPENDIENTE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Propuestas enfocadas en brindar el apoyo y las herramientas necesarias para que las personas vivan y se desenvuelvan de la manera más independiente posible[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-streamings" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">STREAMINGS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Espacio de expresión audiovisual e inclusión digital para visibilizar proyectos, potenciar habilidades comunicativas y compartir vivencias comunitarias[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-vivero" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">VIVERO URBANO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Proyecto productivo y de capacitación práctica orientado al desarrollo de competencias laborales, el trabajo en equipo y el contacto directo con la naturaleza[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-musicoterapia" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">MUSICOTERAPIA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Disciplina terapéutica y de expresión artística utilizada para potenciar el bienestar integral, la comunicación y el desarrollo emocional de los participantes[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-laboral" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">TALLER LABORAL</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Actividades destinadas al desarrollo de habilidades técnicas y sociales que promueven la inclusión laboral, la dedicación y el crecimiento profesional[cite: 1].</p>
+      </div>
+    </div>
+  </div>
+</div>
+        
 </body>
 
 </html>
