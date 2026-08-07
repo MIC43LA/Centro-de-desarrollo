@@ -4,7 +4,7 @@ Este repositorio contiene el código fuente del proyecto **CID**, desplegado en 
 
 ## 🚀 Demo en línea
 Podés ver el sitio funcionando aquí:  
-👉 [https://antonela-martinez.github.io/cid/](https://mic43la.github.io/Centro-de-desarrollo/)
+👉 [https://mic43la.github.io/Centro-de-desarrollo/](https://mic43la.github.io/Centro-de-desarrollo/)
 
 ## 📂 Desarrollo
 - Practica IT CILSA
@@ -20,5 +20,5 @@ Podés ver el sitio funcionando aquí:
 ## 📌 Cómo clonar y ejecutar
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/Antonela-Martinez/cid.git
+   git clone https://github.com/mic43la/Centro-de-desarrollo.git
 
