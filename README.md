@@ -9,16 +9,17 @@ Podés ver el sitio funcionando aquí:
 ## 📂 Desarrollo
 - Practica IT CILSA
 - Trabajo colaborativo creando el sitio web del Centro cultural de cordoba
-- Prueba de Deploy
+- Deploy git hub pages
 
 ## ⚙️ Tecnologías utilizadas
 - HTML5
 - CSS3
 - JavaScript
+- Boostrap
 - Git & GitHub Pages
 
 ## 📌 Cómo clonar y ejecutar
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/mic43la/Centro-de-desarrollo.git
+   git clone https://github.com/MIC43LA/Centro-de-desarrollo.git
 
