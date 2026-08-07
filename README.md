@@ -4,7 +4,7 @@ Este repositorio contiene el código fuente del proyecto **CID**, desplegado en 
 
 ## 🚀 Demo en línea
 Podés ver el sitio funcionando aquí:  
-👉 [https://antonela-martinez.github.io/cid/](https://antonela-martinez.github.io/cid/)
+👉 [https://antonela-martinez.github.io/cid/](https://mic43la.github.io/Centro-de-desarrollo/)
 
 ## 📂 Desarrollo
 - Practica IT CILSA
